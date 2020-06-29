@@ -1,16 +1,10 @@
 import React from 'react';
 import Navbar from './components/layout/Navbar'
 import './App.css';
+import Users from './components/users/Users';
 
 function App() {
   
-  const name ="Muhammad Rikza Afnan"
-
-  const loading = false
-
-  const showName = true;
-  
-
   return (
 
     <div className="App">
@@ -21,7 +15,12 @@ function App() {
         )
       } */}
 
-      <Navbar title="Github Finder"/>
+      <Navbar title="Github Finder" icon="fab fa-github"/>
+
+      <div className="container">
+        <Users/>
+      </div>
+
     </div>
 
   );
